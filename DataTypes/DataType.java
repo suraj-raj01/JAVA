@@ -26,10 +26,10 @@ class DataType{
 		float f = 12.35F;
 		double d = 2.3654;
 		char c = 'S';
-			System.out.println(a);
-			System.out.println(f);
-			System.out.println(d);
-			System.out.println(c);
+			System.out.println("Integer Value: "+a);
+			System.out.println("floating Value: "+f);
+			System.out.println("Double Value: "+d);
+			System.out.println("Character Value: "+c);
 		}
 	}
 
