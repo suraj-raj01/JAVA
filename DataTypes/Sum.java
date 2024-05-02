@@ -7,6 +7,6 @@ class Sum{
 		int c;
 		c = a+b;
 		System.out.println("Sum is: "+c);
-		System.out.printf("Sum is: %d",c);
+		System.out.printf("Sum is: %d\n",c);
 	}
 }
