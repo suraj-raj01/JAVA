@@ -1,3 +1,5 @@
+// Swap two value without using third Variables.
+
 class swap1{
 	public static void main(String args[]){
 		int a = 10;
