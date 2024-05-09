@@ -1,7 +1,31 @@
 /*
 
 Operators:
-
+Q1. Explain Operators in java programming?
+Ans:  Operators are symbols that tells to the compiler to  perform some specific task
+Example:
+C=10+20;
+In above expression =,+ are operators and C,10,20 are operators
+ 
+Types of Operators on the basis of Number of Operand
+1. Unary Operator:  It takes only one operand at a time and perform some specific operations
+Example:  i++,!,~,
+ 
+2. Binary operators: It takes two operand at a time and perform some operations
+Example: >,<,==, +,-,*,/,%
+ 
+3. Ternary Operator: It Takes three operand at a time and perform some specifc operation
+Example: exp1 ? exp2: exp3;
+ 
+ 
+Types of Operators on the basis of functionalities
+1. Arithmetic operators[+,-,*,/,%,++,--]
+2. Relational Operators[>,<,>=,<=,==,!=]
+3. Logical Operators [&&,||,!]
+4. Bitwise Operators[&,|,~,<<,>>,^]
+5. Conditional Operators/ Ternary Operators[? : ]
+6. Assignment Operators[=,+=,-=,*=,/=]
+ 
 
 */
 
