@@ -10,3 +10,5 @@ class Ternary{
 		System.out.println(a>b?"yes":"no");
 	}
 }
+
+//167649
