@@ -14,8 +14,10 @@ public class first {
         System.out.println("Enter Seconds: ");
         int sec = sc.nextInt();
         int hour = sec/3600;
-        int min = (sec-(3600*hour))/60;
-        int secs = (sec-(3600*hour))-(min*60);
+        //int min = (sec-(3600*hour))/60;
+	int min = sec%3600/60;
+        //int secs = (sec-(3600*hour))-(min*60);
+	int secs = sec%3600%60/1;
         System.out.println("H:M:S - "+hour+":"+min+":"+secs);
         sc.close();
     }
