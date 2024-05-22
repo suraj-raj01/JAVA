@@ -21,5 +21,5 @@ class first{
 	else{
 	System.out.println("Zero");
 	}
-}
-}
+    }
+}	
