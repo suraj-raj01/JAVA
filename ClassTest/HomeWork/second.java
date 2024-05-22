@@ -10,9 +10,30 @@ Input value: 25
 Positive number
 */
 
-
+import java.util.*;
 class second{
 	public static void main(String args[])		
 		{
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the 
+		System.out.println("Enter the number: ");
+		float number = sc.nextFloat();
+		if(number<0)
+		{
+			System.out.println("Negative");
+		}
+
+		else if(number>0)
+		{
+			System.out.println("Positive");
+		}
+
+		else
+		{
+			System.out.println("Zero");
+		}
+		float absolute = Math.abs(number);
+		if(absolute<0){
+		System.out.println("Small");	
+		}
+	}
+}
