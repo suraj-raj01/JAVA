@@ -14,4 +14,20 @@ class seventh{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number: ");
 		int n = sc.nextInt();
-		
+		int k = n;
+		int sum=0;
+		while(n>0)
+			{
+			int s = n%10;
+			sum+=s;
+			n/=10;
+		}
+		if(k%sum==0)
+			{
+			System.out.println("Niven Number");
+		}
+		else{
+		System.out.println("Not Niven Number");
+		}
+	}
+}
