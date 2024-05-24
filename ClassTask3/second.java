@@ -29,15 +29,15 @@ class second {
 		int n = sc.nextInt();
 		System.out.println("Enter the number: ");
 		int m = sc.nextInt();
-		int sum, k, t;
 		
-		while(n<m)
+		while(n!=m)
 		{
+			int sum, k, t;
 			sum = 0;
 			k = 0;
 			t = n;
-			while (n != 0) {
-				sum += n % 10;
+			while (n!= 0) {
+				sum += n% 10;
 				n /= 10;
 			}
 			while (sum >= 10) {
@@ -45,11 +45,8 @@ class second {
 				sum /= 10;
 			}
 			if (sum==1) {
-				System.out.println(n);
-				sum++;
-
-			} else {
-				System.out.println("It is not a Magic number");
+				System.out.println(t);
+				break;
 			}
 			n++;
 		}
