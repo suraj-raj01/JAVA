@@ -20,35 +20,36 @@ m=120 n=90
 Output: Invalid input
 */
 
-
 import java.util.Scanner;
-class second{
-	public static void main(String args[]){
+
+class second {
+	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number: ");
 		int n = sc.nextInt();
-		int sum=0;
-		int k=0;
-		while(n!=0)
-		{
-		sum+=n%10;
-		n/=10;
-		}
+		int m = sc.nextInt();
+		int sum,k,t;
+		while (n!=m) {
+			sum = 0;
+			k = 0;
+			t = n;
+			
+			while (n != 0) {
+				sum += n % 10;
+				n /= 10;
+			}
 
-		while(sum!=0){
-		k += sum%10;
-		sum/=10;
+			while (sum != 0) {
+				k += sum % 10;
+				sum /= 10;
+			}
+			if (k == 1) {
+				System.out.println(t);
+				break;
+			} else {
+				System.out.println("It is not a Magic number");
+			}
+			n++;
 		}
-		System.out.println(k);
 	}
 }
-
-
-
-
-
-
-
-
-
-
