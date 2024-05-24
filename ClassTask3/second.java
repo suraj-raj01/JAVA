@@ -27,25 +27,27 @@ class second {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number: ");
 		int n = sc.nextInt();
+		System.out.println("Enter the number: ");
 		int m = sc.nextInt();
-		int sum,k,t;
-		while (n!=m) {
+		int sum, k, t;
+		
+		while(n<m)
+		{
 			sum = 0;
 			k = 0;
 			t = n;
-			
 			while (n != 0) {
 				sum += n % 10;
 				n /= 10;
 			}
-
-			while (sum != 0) {
+			while (sum >= 10) {
 				k += sum % 10;
 				sum /= 10;
 			}
-			if (k == 1) {
-				System.out.println(t);
-				break;
+			if (sum==1) {
+				System.out.println(n);
+				sum++;
+
 			} else {
 				System.out.println("It is not a Magic number");
 			}
