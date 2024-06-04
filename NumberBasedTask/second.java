@@ -9,17 +9,20 @@ First Twenty Hamming numbers: 1 2 3 4 5 6 8 9 10 12 15 16 18 20 24 25
 27 30 32 36
 */
 
-class second{
+class second{ 
 	public static void main(String args[])
 	{
 	int n=1;
+	System.out.print(n+" ");
 	while(n!=40)
 	{
-	if(n%2==0 || n%3==0 || n%5==0)
+	for(int i=2; i<=5; i++){
+	if(n%i==0)
 	{
 	System.out.print(n+" ");
 	}
 	n++;
+	}
 	}
 	}
 }
