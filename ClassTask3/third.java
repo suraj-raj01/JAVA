@@ -78,6 +78,7 @@ class third{
 		System.out.println(t);
 		
 		}
+		sc.close();
 	}
 }
 

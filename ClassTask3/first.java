@@ -13,27 +13,49 @@ Thus, 666 is a Smith Number.
 
 import java.util.Scanner;
 class first{
+	public static boolean isPrime(int n)
+	{
+		for(int i=2; i<=n/2; i++)
+		{
+			if(i%2==0)
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+	public static void printPrime(int n)
+	{
+		int sum=0;
+		int k = n;
+		while(k!=0){
+		while(n!=0)
+		{
+			int r = n%10;
+			sum+=r;
+			n/=10;
+		}
+		int Psum=0;
+		for(int i=2; i<=n; i++)
+		{
+			if(isPrime(i))
+			{
+				System.out.println(i+" ");
+				Psum+=i;
+			}
+		}
+		if(sum==Psum)
+		{
+			System.out.println("Smith Number");
+		}
+		k--;
+	}
+	}
 	public static void main(String args[]){
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number: ");
 		int n = sc.nextInt();
-		int k = n;
-		int sum=0;
-		while(n!=0)
-		{
-		sum+=n%10;
-		n/=10;
-		}
-		System.out.println(sum);
-		int prime = 0;
-		for(int i=2; i<=k/2; i++)
-		{
-		if(k%i==0)
-		{
-		  prime=i;
-		  System.out.println(prime);
-		  k/=prime;
-		}
-		}
+		printPrime(n);
+		sc.close();
 	}
 }

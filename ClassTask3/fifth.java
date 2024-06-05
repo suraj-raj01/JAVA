@@ -1,7 +1,9 @@
 /*
 Q5. Armstrong Number Program in Java
 
-Armstrong Number is a positive number if it is equal to the sum of cubes of its digits is called Armstrong number and if its sum is not equal to the number then its not a Armstrong number. Armstrong Number Program is very popular in java, c language, python etc. Examples: 153 is Armstrong, (1*1*1)+(5*5*5)+(3*3*3) = 153
+Armstrong Number is a positive number if it is equal to the sum of cubes of its digits is called Armstrong 
+number and if its sum is not equal to the number then its not a Armstrong number. Armstrong Number Program 
+is very popular in java, c language, python etc. Examples: 153 is Armstrong, (1*1*1)+(5*5*5)+(3*3*3) = 153
 */
 
 
@@ -25,5 +27,6 @@ class fifth{
 		else{
 		System.out.println("Not Armstrong Number");
 		}
+		sc.close();
 	}
 }
