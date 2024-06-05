@@ -17,5 +17,11 @@ class cmpTo{
 		// System.out.println(s3);
 		System.out.println(str1.equals(str2));
 		System.out.println(str1.equalsIgnoreCase(str2));
+
+		String a = "SURAJ";
+		String b = "SURAJ";
+		System.out.println(a==b);
+		System.out.println(a.equals(b));
+		System.out.println(a.compareTo(b));
 	}
 }

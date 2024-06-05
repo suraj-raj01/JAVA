@@ -18,21 +18,22 @@ class Str{
         System.out.println(f==e);
 
         // equal ignore case
-        System.out.println("Igone Case");
+        System.out.println("Ignore Case");
         String x = "HELLO";
         String y = "hello";
         System.out.println(x.equals(y));
         System.out.println(x.equalsIgnoreCase(y));
 
         // Wrapper class
-        Integer i = new Integer("10");
-        Integer j = new Integer("10");
+        Integer i = new Integer(10);
+        Integer j = new Integer(10);
         System.out.println(i==j);
         System.out.println(i.equals(j));
+	System.out.println(i.compareTo(j));
 
         // isEmpty()
         // it will return true given String is empty otherwise return false
-        String s = "";
+        String s = "54465";
         System.out.println(s.isEmpty());
     }
 }
