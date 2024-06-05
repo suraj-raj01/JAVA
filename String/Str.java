@@ -35,5 +35,6 @@ class Str{
         // it will return true given String is empty otherwise return false
         String s = "54465";
         System.out.println(s.isEmpty());
+
     }
 }
