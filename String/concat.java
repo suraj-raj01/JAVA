@@ -41,5 +41,6 @@ class concat{
 	}
 	else
 	System.out.println("Please enter 8 character Password!");
+	sc.close();
 	}
 }

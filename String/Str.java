@@ -13,7 +13,7 @@ class Str{
         String d = "HI";
         String e = "HI";
         String f = e;
-        System.out.println(d==e);
+        System.out.println(d==f);
         System.out.println(d.equals(e));
         System.out.println(f==e);
 
@@ -29,11 +29,11 @@ class Str{
         Integer j = new Integer(10);
         System.out.println(i==j);
         System.out.println(i.equals(j));
-	System.out.println(i.compareTo(j));
+	    System.out.println(i.compareTo(j));
 
         // isEmpty()
         // it will return true given String is empty otherwise return false
-        String s = "54465";
+        String s = "1234";
         System.out.println(s.isEmpty());
 
     }

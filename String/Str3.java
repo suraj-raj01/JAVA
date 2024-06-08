@@ -9,6 +9,7 @@ class Str3{
 	System.out.println("Length after trim: "+s.length());
 
 	// String valueOf() method in java programming
+	// It is use for one datatype to another like typcasting
 	int a = 1365;
 	String x = String.valueOf(a);
 	System.out.println("Value in String: "+x);
@@ -24,11 +25,11 @@ class Str3{
 
 	//StrignBuffer() it is mutable we can modify them.
 	
-	StringBuffer str = new StringBuffer("Hello");
-	str.append(" World");
-	str.append(" Welcome");
-	str.append(" To");
-	str.append(" Bhopal");
-	System.out.println(str);
+	StringBuffer string = new StringBuffer("Hello");
+	string.append(" World");
+	string.append(" Welcome");
+	string.append(" To");
+	string.append(" Bhopal");
+	System.out.println(string);
 	}
 }

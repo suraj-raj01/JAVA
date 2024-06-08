@@ -8,13 +8,13 @@ public class Str1 {
          print(b) // true
          */
 	
-	/*
+	
          String str = "Welcome to Bhopal";
          Boolean b = str.contains("to");
          System.out.println(b);		// true
          Boolean c = str.contains("Java");
          System.out.println(c);		// false
-	*/
+	
 
 	// endsWith() Methods in Java Programming
 	/*
@@ -23,16 +23,14 @@ public class Str1 {
 	boolean endsWidth();
 	*/
 	
-	/*
+	
 	String url = "www.cybrom.com";
 	Boolean bool = url.endsWith(".com");
 	System.out.println(bool);	// true
 
 	Boolean bool1 = url.endsWith("www");
 	System.out.println(bool1);	// false
-	*/
-
-
+	
 	// startsWith() Method in Java Programming
 	
 	String s = "www.cybrom.com";
@@ -44,7 +42,7 @@ public class Str1 {
 
 	// indexOf() Method in Java Programming
 	
-	/*
+	
 	String i = "WELC OME";
 	int n = i.indexOf(" ");
 	int m = i.indexOf("E",2);
@@ -52,7 +50,7 @@ public class Str1 {
 	System.out.println(n);
 	System.out.println(m);
 	System.out.println(o);
-	*/
+	
 
 	// lastIndexOf() Methods
 	String x = "WELCOME";
