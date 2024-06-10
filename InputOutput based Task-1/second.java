@@ -19,7 +19,8 @@ class second{
 		
 		year = day/365;
 		month = day%365/30;
-		days = day%365%30/1;
+		days = day%365%30;
 		System.out.println("YY:MM:DD - "+year+":"+month+":"+days);
+		sc.close();
 	}
 }

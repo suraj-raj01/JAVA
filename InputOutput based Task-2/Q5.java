@@ -20,5 +20,6 @@ class Q5{
 		b = sc.nextInt();
 		product = a*b;
 		System.out.println("product is: "+product);
+		sc.close();
 	}
 }

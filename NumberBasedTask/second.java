@@ -13,16 +13,14 @@ class second{
 	public static void main(String args[])
 	{
 	int n=1;
-	System.out.print(n+" ");
+	System.out.println(n+" ");
 	while(n!=40)
 	{
-	for(int i=2; i<=5; i++){
-	if(n%i==0)
-	{
-	System.out.print(n+" ");
-	}
-	n++;
-	}
+		if(n%2==0 || n%3==0 || n%5==0)
+		{
+			System.out.println(n+" ");
+		}
+		n++;
 	}
 	}
 }

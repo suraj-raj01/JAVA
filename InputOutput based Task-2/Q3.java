@@ -18,5 +18,6 @@ class Q3{
 		denom = sc.nextInt();
 		res = n/denom;
 		System.out.println("Result: "+res);
+		sc.close();
 	}
 }

@@ -37,5 +37,6 @@ class Q6{
 	
 		int modul = a%b;
 		System.out.println("Modulus is : "+modul);
+		sc.close();
 	}
 }

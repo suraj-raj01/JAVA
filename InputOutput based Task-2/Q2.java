@@ -17,6 +17,7 @@ class Q2{
 		b = sc.nextInt();
 		c = a+b;
 		System.out.println("Sum is: "+c);
+		sc.close();
 	}
 }
 		

@@ -14,5 +14,6 @@ class fifth{
 		fahrenheit = sc.nextFloat();
 		centigrade = (fahrenheit-32f)*5/9f;
 		System.out.println(fahrenheit+" Fahrenheit = "+centigrade+" Celsius");
+		sc.close();
 	}
 }

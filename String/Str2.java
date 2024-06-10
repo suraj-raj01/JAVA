@@ -14,6 +14,7 @@ class Str2{
 	
 	String s1 = "Welcome to the city of Lakes";
 	String arr[] = s1.split(" ");
+	System.out.println(s1);
 	int len = arr.length;
 	System.out.println("Number of Words : "+len);
 	
@@ -36,6 +37,9 @@ class Str2{
 	String a = "welcome";
 	String b = a.toUpperCase();
 	System.out.println(b);
+	
+	// toLowerCase() method
+	System.out.println(b.toLowerCase());
 	}
 	
 }	

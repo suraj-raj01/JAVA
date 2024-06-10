@@ -17,23 +17,24 @@ class third{
 	public static void main(String args[]){
 		double a,b,c,d,e;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the first number: ");
+		System.out.print("Enter the first number: ");
 		a = sc.nextDouble();
 
-		System.out.println("Enter the second number: ");
+		System.out.print("Enter the second number: ");
 		b = sc.nextDouble();
 
-		System.out.println("Enter the third number: ");
+		System.out.print("Enter the third number: ");
 		c = sc.nextDouble();
 
-		System.out.println("Enter the fourth number: ");
+		System.out.print("Enter the fourth number: ");
 		d = sc.nextDouble();
 
-		System.out.println("Enter the fifth number: ");
+		System.out.print("Enter the fifth number: ");
 		e = sc.nextDouble();
 		
 		double average = (a+b+c+d+e)/5;
 		System.out.println("Average : "+average);
+		sc.close();
 	}
 }
 

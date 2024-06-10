@@ -22,5 +22,6 @@ class fourth{
 
 	System.out.println("Quotient: "+quotient);
 	System.out.println("Remainder: "+remainder);
+	sc.close();
 	}
 }	

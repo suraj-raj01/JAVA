@@ -5,7 +5,7 @@ Hello
 Ram Lovewanshi
 */
 
-import java.util.Scanner;
+// import java.util.Scanner;
 class Q1{
 	public static void main(String args[]){
 		String a = "HELLO";

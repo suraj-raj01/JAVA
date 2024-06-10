@@ -11,6 +11,7 @@ class Str3{
 	// String valueOf() method in java programming
 	// It is use for one datatype to another like typcasting
 	int a = 1365;
+	System.out.println("Value in Number: "+a);
 	String x = String.valueOf(a);
 	System.out.println("Value in String: "+x);
 	System.out.println("Length of the value: "+x.length());
