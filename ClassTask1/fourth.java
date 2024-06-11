@@ -21,6 +21,7 @@ class fourth{
 		else{
 		System.out.println("Odd Number");
 		}
+		sc.close();
 	}
 }
 		
