@@ -11,11 +11,11 @@ public class arr2 {
 	i[3] = 4;
 	i[4] = 6;
 	// print data
-	System.out.println(i[0]);
-	System.out.println(i[1]);
-	System.out.println(i[2]);
-	System.out.println(i[3]);
-	System.out.println(i[4]);
+	System.out.println("\t"+i[0]);
+	System.out.println("\t"+i[1]);
+	System.out.println("\t"+i[2]);
+	System.out.println("\t"+i[3]);
+	System.out.println("\t"+i[4]);
 
 	System.out.println("\nFloat Type Value : ");
         float[] f = new float[5];
@@ -25,11 +25,11 @@ public class arr2 {
 	f[3] = 4.24f;
 	f[4] = 6.44f;
 	// print data
-	System.out.println(f[0]);
-	System.out.println(f[1]);
-	System.out.println(f[2]);
-	System.out.println(f[3]);
-	System.out.println(f[4]);
+	System.out.println("\t"+f[0]);
+	System.out.println("\t"+f[1]);
+	System.out.println("\t"+f[2]);
+	System.out.println("\t"+f[3]);
+	System.out.println("\t"+f[4]);
 
 	System.out.println("\nDouble Type Value : ");
         double[] d = new double[5];
@@ -39,10 +39,24 @@ public class arr2 {
 	d[3] = 4.24;
 	d[4] = 6.44;
 	// print data
-	System.out.println(d[0]);
-	System.out.println(d[1]);
-	System.out.println(d[2]);
-	System.out.println(d[3]);
-	System.out.println(d[4]);
+	System.out.println("\t"+d[0]);
+	System.out.println("\t"+d[1]);
+	System.out.println("\t"+d[2]);
+	System.out.println("\t"+d[3]);
+	System.out.println("\t"+d[4]);
+
+	System.out.println("\nString Type Value : ");
+        String[] s = new String[5];
+	s[0] = "SURAJ";
+	s[1] = "RAJAN";
+	s[2] = "HARIOM";
+	s[3] = "RAHUL";
+	s[4] = "BITTU";
+	// print data
+	System.out.println("\t"+s[0]);
+	System.out.println("\t"+s[1]);
+	System.out.println("\t"+s[2]);
+	System.out.println("\t"+s[3]);
+	System.out.println("\t"+s[4]);
     }
 }
