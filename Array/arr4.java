@@ -20,5 +20,6 @@ class arr4{
 	{
 	System.out.print(arr[i]+" ");
 	}
+	sc.close();
 	}
 }

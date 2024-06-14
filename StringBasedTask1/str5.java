@@ -12,8 +12,8 @@ public class str5 {
         }
         for(int i=0; i<10; i++)
         {
-            String str[] = s[i].split(" ");
-            if(str[0]=="B"){
+            if(s[i].startsWith("A"))
+            {
                 System.out.println(s[i]);
             }
         }
