@@ -30,9 +30,16 @@ class first{
         int sum=0;
         while(n!=0)
         {
-            int r = n%10;
-            sum = sum*10+r;
-            n/=10;
+	   	if(n<10)
+		{
+		System.out.println(n);
+		n--;
+		}
+	   else if(n>10 && n<1000){
+            	int r = n%10;
+		sum+=r*r*r;
+            	n/=10;
+		}
         }
         System.out.println(sum);
         sc.close();

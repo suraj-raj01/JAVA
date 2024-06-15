@@ -11,13 +11,15 @@ The substring retrieve from the string is : "test";
 import java.util.Scanner;
 public class Q3 {
     public static void main(String[] args) {
+        String str = new String(" this is test string");
         Scanner sc = new Scanner(System.in);
-        String s = new String("this is test string");
-        // System.out.println("Input the position to start extraction: ");
-        // int a = sc.nextInt();
-        // System.out.println("Enter the length of substring: ");
-        // int b = sc.nextInt();
-        System.out.println(s.substring(0,4));
+        System.out.println("Input the position to start extraction: ");
+        int a = sc.nextInt();
+        System.out.println("Enter the length of substring: ");
+        int b = sc.nextInt();
+        b+=a;
+        sc.nextLine();
+        System.out.println(str.substring(a,b));
         sc.close();
     }
 }

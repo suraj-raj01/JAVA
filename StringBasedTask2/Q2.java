@@ -14,6 +14,7 @@ public class Q2 {
         {
             s[i] = sc.nextLine();
         }
+	System.out.println("\nString that contains he ");
         for(int i=0; i<n; i++)
         {
             if(s[i].contains("he"))
