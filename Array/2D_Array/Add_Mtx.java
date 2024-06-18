@@ -40,6 +40,6 @@ class Add_Mtx{
 	}
 	System.out.println();
 	}	
-
+sc.close();
 	}
 }
