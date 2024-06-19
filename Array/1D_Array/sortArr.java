@@ -37,5 +37,6 @@ class sortArr{
 	{
 	System.out.print(arr[i]+" ");
 	}
+	sc.close();
 	}
 }

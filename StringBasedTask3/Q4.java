@@ -11,15 +11,26 @@ appears number of times : 4
 public class Q4 {
     public static void main(String[] args) {
         String s = new String("Welcome to w3resource.com");
+        char ch[] = s.toCharArray();
+        int t=0;
+        char p=' '; 
         for(int i=0; i<s.length(); i++)
         {
-            for(int j=0; j<s.length(); j++)
+            int c=0;
+            for(int j=1; j<s.length(); j++)
             {
-                if(s.charAt(i)==s.charAt(j))
+                if(ch[i]==ch[j])
                 {
-                    System.out.println(s.charAt(i));
+                    c++;
                 }
             }
+            if(t<c)
+            {
+                t=c;
+                p = ch[i];
+            }
         }
+        System.out.println("Character is : "+p);
+        System.out.println("Character comes "+t+" times");
     }
 }
