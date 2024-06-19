@@ -32,7 +32,26 @@ public class Multiple {
             }
         }
 
+        for(int i=0; i<r; i++)
+        {
+            for(int j=0; j<c; j++)
+            {
+                for(int k=0; k<c; k++)
+                {
+                    mul[i][j] += arr1[i][k]*arr2[k][j];
+                }
+            }
+        }
 
+        System.out.println("\nAfter Multiplication");
+        for(int i=0; i<r; i++)
+        {
+            for(int j=0; j<c; j++)
+            {
+                System.out.print(mul[i][j]+"\t");
+            }
+            System.out.println();
+        }
         sc.close();
     }
 }

@@ -1,4 +1,4 @@
-// 2. Write a java program to print sum of row byes sum and column byes sum.
+// 2. Write a java program to print row byes sum and column byes sum.
 
 import java.util.Scanner;
 
