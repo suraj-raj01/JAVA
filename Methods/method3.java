@@ -15,5 +15,6 @@ class method3{
 	System.out.print("Enter the second number : ");
 	int b = sc.nextInt();
 	sum(a,b);
+	sc.close();
 	}
 }
