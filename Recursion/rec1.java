@@ -1,4 +1,4 @@
-// Write a program to print n natural number using recursion.
+// Write a program to print sum of n natural number using recursion.
 
 class rec1{
 
