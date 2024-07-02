@@ -8,6 +8,22 @@ The given sentence is : This Is A Test String.
 After Case changed the string is: tHIS iS a tEST sTRING.
 */
 
-import java.util.Scanner;
-class demo{
-`	public static void main(String args];
+class Q2{
+
+    public static void toggle(String s)
+    {
+        String str[] = s.split(" ");
+        for(int i=0; i<str.length; i++)
+        {
+            System.out.print(str[i]+" ");
+            if(str[i].charAt(i)>=65 && str[i].charAt(i)<=90)
+            {
+                
+            }
+        }
+    }
+    public static void main(String[] args) {
+        String s = "this is a string";
+        toggle(s);
+    }
+}
