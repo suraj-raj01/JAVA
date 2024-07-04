@@ -7,25 +7,18 @@ Expected Output :
 The frequency of the word 'the' is : 3
 */
 
-class Q3{
-    public static void appears(String s)
-    {
-        String str[] = s.split(" ");
-        int count=0;
-        System.out.println(str.length);
-        for(int i=0; i<str.length; i++)
-        {
-            for(int j=0; j<str.length; j++)
-            {
-                if(str[i].equalsIgnoreCase(str[j])){
-                    count++;
-                }
-            }
-        }
-        System.out.println(count);
-    }
+class Q3 {
     public static void main(String[] args) {
         String s = new String("The string where the word the present more than once");
-        appears(s);
+        String s1[] = s.split(" ");
+        int count=0;
+        for(int i=0; i<s1.length; i++)
+        {
+            if(s1[i].equalsIgnoreCase("the"))
+            {
+                count++;
+            }
+        }
+        System.out.println("The frequency of the word 'the' is : "+count);
     }
 }
