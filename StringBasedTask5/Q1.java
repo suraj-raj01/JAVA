@@ -9,18 +9,20 @@ and the smallest word is 'a';
 */
 
 public class Q1 {
-    public static void SmallestLargest(String[] s) {
-        String s1 = "";
-        for (int i = 0; i < s.length; i++) {
-            if (s[i].length() > s[i + 1].length()) {
-                s1 += s[i];
+    public static void main(String[] args) {
+        String s = "It is a string with smallest and largest word";
+        String s1[] = s.split(" ");
+        String largest="";
+        for(int i=0; i<s1.length; i++)
+        {
+            for(int j=0; j<s1.length; i++)
+            {
+                if(s1[i].length()<s1[j+1].length())
+                {
+                    largest+=s1[i].length();
+                }
             }
         }
-        System.out.println(s1);
-    }
-
-    public static void main(String[] args) {
-        String[] s = { "It is a string with smallest and largest word" };
-        SmallestLargest(s);
+        System.out.println(largest);
     }
 }
