@@ -14,15 +14,15 @@ public class str4{
         if(s.length()>=6)
         {
           
-        char c[] = s.toCharArray();
-        for(int i=0; i<c.length; i++)
-        {
-            if(c[i]=='#'|| c[i]=='!' || c[i]=='$' || c[i]=='%' || c[i]=='&'){
+            for(int i=0; i<s.length(); i++)
+            {
+            char c = s.charAt(i);
+            if(!((c>='a' && c<='z') || (c>='A' && c<='Z') || (c>='0' && c<='9'))){
                 System.out.println("\nSpecial Character used");
                 break;
             }
             else{
-                System.out.print(c[i]);
+                System.out.print(c);
             }
         }
     }else{
