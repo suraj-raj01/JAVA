@@ -1,0 +1,30 @@
+Explain Polymorphism in java programming?
+Ans: Poly morphism means one name many forms
+
+Examples of Polymorphism
+
+MySelf for You as a Trainer
+Myself for Student in college as a Professor
+Myself for Home I am son
+Myself for My child I am Father
+Myself for Wife I am Husband
+Myself for Parents I am son
+
+Types of Polymorphism
+1. Compile time Polymorphism
+Method Overloading
+2. Run Time Polymorphism
+Method Overriding
+
+Explain Method overloading in Java programming?
+Ans:
+Method Overloading means having two or more
+methods in a class with the same name and different
+types of Parameters or different number of Parameters.
+
+Explain Method overriding in java programming?
+
+Ans: In java method overriding is a features that allows a sub class or childclass to 
+provide a specific implementation of a method that is already defined in Parent class. 
+When a method in a sub class has the same name, same return type, same argument (type)
+
