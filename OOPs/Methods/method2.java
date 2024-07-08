@@ -15,6 +15,7 @@ class method2{
 	else{
 	System.out.println("Odd Number");
 	}
+	sc.close();
 	}
 	public static void main(String args[])
 	{
