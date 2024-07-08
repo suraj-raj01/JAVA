@@ -12,8 +12,8 @@ class B extends A {
     public void m1() {
         System.out.println("From Child m1()");
     }
-
     public void m2() {
+        //super.m1();
         System.out.println("From Child m2()");
     }
 }
