@@ -1,0 +1,64 @@
+Q1.Explain interface in java programming?
+Ans: we can also achieve abstraction in java programming with interface
+
+Using interface we achieve 100% abstraction in java because by default every method in
+interface is public and abstract
+
+No need to use abstract keyword in interface
+
+Interface is a collection of method declaration
+and final variable
+
+Interface keyword is used to declare interface
+A class can implements any number of
+interfaces at a time
+
+A interface can extends more than one
+interface at a time(Multiple inheritance)
+
+We cannot create an instance / object of
+interface, but it can store the reference of its
+implemented class.
+
+Apart from interface method a implemented
+class can have its own method
+
+interface Ia{
+int x=10;
+void a();
+
+}
+
+interface Ib{
+int y=20;
+void b();
+
+}
+
+class Test implements Ia,Ib{
+
+public void a(){
+System.out.println(&quot;Ia INterface method :
+&quot;+x);
+}
+public void b(){
+System.out.println(&quot;Ib INterface method :
+&quot;+y);
+}
+
+public void hello(){
+System.out.println(&quot;This is Test class
+Method&quot;);
+}
+public static void main(String args[]){
+//Ia obj=new Ia();//C.E.
+Ia obj=new Test();
+
+obj.a();
+//obj.hello();
+Test t=new Test();
+t.hello();
+t.a();
+t.b();
+}
+}
