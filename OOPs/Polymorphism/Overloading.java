@@ -19,15 +19,25 @@ public class Overloading {
     {
         return a+b+c;
     }
-    public String data(String s)
+    public String sum(String s,String k)
     {
-        return s;
+        return s+k;
+    }
+    public double sum(double a, double b)
+    {
+        return a+b;
+    }
+    public float sum(float a, float b)
+    {
+        return a+b;
     }
 
     public static void main(String[] args) {
         Overloading obj = new Overloading();
         System.out.println("sum is: "+obj.sum(10,20));
         System.out.println("sum is: "+obj.sum(10, 20, 30));
-        System.out.println("Name : "+obj.data("SURAJ KUMAR"));
+        System.out.println("Name Concate : "+obj.sum("SURAJ"," KUMAR"));
+        System.out.println("Sum is: "+obj.sum(5.325, 256.354));
+        System.out.println("Sum is: "+obj.sum(2.65f, 45.3f));
     }
 }
