@@ -9,11 +9,15 @@ Output:
 */
 
 
+
 class Q1{
     public static void main(String[] args) {
         StringBuilder s = new StringBuilder("Hello");
-        StringBuilder s1 = new StringBuilder("Ram");
+        String s1 = new String("Ram");
         System.out.println(s.append(s1));
-        System.out.println(s.insert(3,s1));
+        s.delete(5,8);
+        System.out.println(s.insert(0,s1));
+        s.delete(0,3);
+        System.out.println(s.insert(s.length()-2, s1));
     }
 }
