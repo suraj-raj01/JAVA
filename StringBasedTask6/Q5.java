@@ -6,7 +6,7 @@ Explanation: The given string contains even number of characters. Therefore,
 we swap every pair of characters.
 */
 public class Q5 {
-    public static String SwapPairs(String s)
+    public String SwapPairs(String s)
     {
         char ch[] = s.toCharArray();
         if(s==null || s.isEmpty())
@@ -23,6 +23,7 @@ public class Q5 {
     }
     public static void main(String[] args) {
         String s = "Java";
-        System.out.println(Q5.SwapPairs(s));
+        Q5 obj = new Q5();
+        System.out.println(obj.SwapPairs(s));
     }
 }
