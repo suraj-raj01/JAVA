@@ -47,6 +47,7 @@ public class student {
         c = sc.nextInt();
         System.out.println("Enter Hindi marks: ");
         h = sc.nextInt();
+        sc.close();
     }
     public void getPer()
     {
