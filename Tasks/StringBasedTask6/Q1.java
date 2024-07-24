@@ -8,8 +8,6 @@ Output:
 --> If at sat 3rd index, Output: HelRamlo
 */
 
-
-
 class Q1{
     public static void main(String[] args) {
         StringBuilder s = new StringBuilder("Hello");

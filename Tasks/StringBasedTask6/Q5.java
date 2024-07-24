@@ -1,8 +1,8 @@
 /*
 Swapping Pairs of Characters in a String in Java?
-Input: str = "Java"
-Output: aJav
-Explanation: The given string contains even number of characters. Therefore,
+Input: str = "Java"
+Output: aJav
+Explanation: The given string contains even number of characters. Therefore,
 we swap every pair of characters.
 */
 public class Q5 {
@@ -22,7 +22,7 @@ public class Q5 {
         return new String(ch);
     }
     public static void main(String[] args) {
-        String s = "Java";
+        String s = "JAVA";
         Q5 obj = new Q5();
         System.out.println(obj.SwapPairs(s));
     }
