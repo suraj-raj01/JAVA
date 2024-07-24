@@ -40,10 +40,38 @@ public class Node {
             Node temp = Head;
             while(temp!=null)
             {
-                System.out.println("===>"+temp.data);
+                System.out.print(temp.data+"\t");
                 temp = temp.next;
             }
         }
+    }
+    public void insertNodeAtPos(Node head,int data,int pos)
+	{
+	Node newNode = new Node(data);
+	pos--;
+	Node temp = head;
+	Node temp1 = head.next;
+	while(pos>1)
+	{
+	temp = temp.next;
+	temp1 = temp1.next;
+	pos--;
+	}
+	temp.next = newNode;
+	newNode.next = temp1;
+	}
+    // delete first node.
+    public Node deleteFirst(Node head)
+    {
+        Node temp = head;
+        if(head==null)
+        {
+            System.out.println("List is empty!!!");
+        }
+        else{
+            temp = head.next;
+        }
+        return temp;
     }
     public static void main(String[] args) {
         Node first = new Node(10);
@@ -54,10 +82,16 @@ public class Node {
         Head.next.next = third;
         Head.printData(Head);
         Head = Head.addAtStart(Head, 5);
-        System.out.println("After insert data at begning");
+        System.out.println("\nAfter insert data at begning");
         Head.printData(Head);
         Head = Head.addAtEnd(Head, 40);
-        System.out.println("After insert data at ending");
+        System.out.println("\nAfter insert data at ending");
+        Head.printData(Head);
+        System.out.println("\nAfter insert data at specific position");
+        Head.insertNodeAtPos(Head,35,5);
+        Head.printData(Head);
+        System.out.println("\nAfter delete the first node");
+        Head = Head.deleteFirst(Head);
         Head.printData(Head);
     }
 }
