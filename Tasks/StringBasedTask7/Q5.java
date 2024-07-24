@@ -4,12 +4,12 @@ A string is a pangram string if it contains all the character of
 the alphabets ignoring the case of the alphabets.
 
 Examples:
-Input: str = “Abcdefghijklmnopqrstuvwxyz”
+Input: str = "Abcdefghijklmnopqrstuvwxyz"
 Output: Yes
 Explanation: The given string contains all the letters from a to z
 (ignoring case).
 
-Input: str = “WelcomeToBhopal”
+Input: str = "WelcomeToBhopal"
 Output: No
 */
 public class Q5 {

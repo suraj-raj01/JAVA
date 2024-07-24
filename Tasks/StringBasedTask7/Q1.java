@@ -10,6 +10,8 @@ Input: String = "Geeks", index = 0, ch = 'g'
 Output: "geeks"
 */
 
+import java.util.Scanner;
+
 public class Q1 {
     public static void ReplaceChar(String s,int idx,char c)
     {
@@ -18,8 +20,12 @@ public class Q1 {
     }
     public static void main(String[] args) {
         String s = "Geeks Gor Geeks";
-        int idx = 6;
+        int idx;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the index: ");
+        idx = sc.nextInt();
         char ch = 'F';
         ReplaceChar(s,idx,ch);
+        sc.close();
     }
 }
