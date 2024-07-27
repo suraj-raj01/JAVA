@@ -1,59 +1,65 @@
 public class LinkedList {
-    int data;
-    LinkedList next;
+    Node head;
     public
-    LinkedList(int data)
-    {
-        this.data = data;
-        this.next = null;
-    }
-    public LinkedList AddStart(LinkedList head, int data)
-    {
-        LinkedList newNode = new LinkedList(data);
-        newNode.next = head;
-        head = newNode;
-        return head;
-    }
-    public LinkedList AddEnd(LinkedList head,int data)
-    {
-        LinkedList newNode = new LinkedList(data);
-        if(head==null)
-        {
-            head = newNode;
-            return head;
+    static class Node{
+        int data;
+        Node next;
+        Node(int d){
+            data = d;
+            next = null;
         }
-        else{
-            LinkedList temp = head;
-            while(temp.next!=null)
-            {
-                temp = temp.next;
+    }
+    // Method to insert a new node
+    public static LinkedList insert(LinkedList list, int data)
+    {
+        // Create a new node with given data
+        Node new_node = new Node(data);
+
+
+        // If the Linked List is empty,
+        // then make the new node as head
+        if (list.head == null) {
+            list.head = new_node;
+        }
+        else {
+            // Else traverse till the last node
+            // and insert the new_node there
+            Node last = list.head;
+            while (last.next != null) {
+                last = last.next;
             }
-            temp.next = newNode;
+
+            // Insert the new_node at last node
+            last.next = new_node;
         }
-        return head;
+
+        // Return the list by head
+        return list;
     }
-    public void printData(LinkedList head)
+
+    // Method to print the LinkedList.
+    public static void printList(LinkedList list)
     {
-        if(head==null)
-        {
-            System.out.println("list is empty");
-        }
-        else{
-            LinkedList temp = head;
-            while (temp!=null) {
-                System.out.println(temp.data);
-                temp = temp.next;
-            }
+        Node currNode = list.head;
+
+        System.out.print("LinkedList: ");
+
+        // Traverse through the LinkedList
+        while (currNode != null) {
+            // Print the data at current node
+            System.out.print(currNode.data + " ");
+
+            // Go to next node
+            currNode = currNode.next;
         }
     }
     public static void main(String[] args) {
-        LinkedList first = new LinkedList(15);
-        LinkedList second = new LinkedList(20);
-        LinkedList head = first;
-        head.next = second;
-        head = head.AddStart(head, 10);
-        head.printData(head);
-        head = head.AddEnd(head, 25);
-        head.printData(head);
+        LinkedList list = new LinkedList();
+        list.insert(list, 1);
+        list.insert(list, 2);
+        list.insert(list, 3);
+        list.insert(list, 4);
+        list.insert(list, 5);
+        list.printList(list);
     }
 }

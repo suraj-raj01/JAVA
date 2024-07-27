@@ -1,5 +1,6 @@
 // Singly LinkedList Implementation in java Programming
 public class Node {
+    private
     String data;
     Node next;
 
@@ -67,6 +68,24 @@ public class Node {
         return temp;
     }
     // Delete last node
+    public Node deleteLast(Node head)
+    {
+        if(head==null)
+        {
+            System.out.println("List is empty!!!");
+        }
+        if(head.next==null)
+        {
+            head = null;
+        }
+        Node temp = head;
+        while(temp.next.next!=null)
+        {
+            temp = temp.next;
+        }
+        temp.next = null;
+        return head;
+    }
 
     public static void main(String[] args) {
         Node first = new Node("B");
@@ -87,6 +106,9 @@ public class Node {
         Head.printData(Head);
         System.out.println("\nAfter delete the first node");
         Head = Head.deleteFirst(Head);
+        Head.printData(Head);
+        System.out.println("\nAfter delete the last node");
+        Head = Head.deleteLast(Head);
         Head.printData(Head);
     }
 }
