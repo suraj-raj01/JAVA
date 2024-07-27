@@ -55,11 +55,11 @@ public class LinkedList {
     }
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
-        list.insert(list, 1);
-        list.insert(list, 2);
-        list.insert(list, 3);
-        list.insert(list, 4);
-        list.insert(list, 5);
-        list.printList(list);
+        insert(list, 1);
+        insert(list, 2);
+        insert(list, 3);
+        insert(list, 4);
+        insert(list, 5);
+        printList(list);
     }
 }
