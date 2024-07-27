@@ -74,7 +74,7 @@ public class QueueImplement {
         q.enq(40);
         System.out.println("Is Queue Full : " + q.isFull());
         q.enq(50);
-        System.out.print("Stack Element is: ");
+        System.out.print("Queue Element is: ");
         q.display();
         System.out.println("\nIs Queue Full : " + q.isFull());
         System.out.println("----------------------");
