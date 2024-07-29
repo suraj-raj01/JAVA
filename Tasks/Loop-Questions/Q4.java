@@ -18,12 +18,16 @@ public class Q4 {
                 sum+=x;
                 count++;
             }
-            else{
+            else if(x==0){
                 break;
+            }
+            else{
+                sum+=x;
+                count++;
             }
         }
         System.out.println("Total sum is : "+sum);
-        System.out.println("Total number is: "+count);
+        System.out.println("Total entered number is: "+count);
         sc.close();
     }
 }

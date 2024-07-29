@@ -17,8 +17,12 @@ public class Q2 {
                 } else {
                     System.out.println("odd");
                 }
-            } else {
+            } else if(a==0) {
                 break;
+            }
+            else{
+                System.out.println("Plese enter positive number");
+                continue;
             }
         }
         sc.close();

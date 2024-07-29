@@ -17,8 +17,12 @@ public class Q3 {
                     sum += a;
                 }
             }
-            else{
+            else if(a==0){
                 break;
+            }
+            else{
+                System.out.println("Please enter positive number!!");
+                continue;
             }
         }
         System.out.println("Total Even number sum : "+sum);

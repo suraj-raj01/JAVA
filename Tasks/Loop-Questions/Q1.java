@@ -8,17 +8,16 @@ public class Q1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int sum = 0;
-        int x;
         while (true) {
             System.out.println("Enter the value: ");
             int a = sc.nextInt();
+            if(a>0 || a<0)
+            {
             sum += a;
-            System.out.println("Enter 1 for continue & 0 for stop: ");
-            x = sc.nextInt();
-            if (x == 1) {
-                continue;
             }
-            break;
+            else if(a==0){
+                break;
+            }
         }
         System.out.println("Sum is: " + sum);
         sc.close();
