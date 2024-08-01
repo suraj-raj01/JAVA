@@ -1,0 +1,39 @@
+Q1. Explain Abstraction in java programming?
+Give Essential Details to the user in summarized Form
+
+Abstraction in java refers to hiding implementation details of a code and exposed
+only the necessary information to the user.
+
+There are two ways to achieve abstraction in
+java
+1. Using abstract class
+2. Using Interface
+
+Abstract class:
+Abstract class is the collection of abstract
+method or non abstract method
+
+We cannot create an instance / object of
+Abstract class
+
+Abstract class can have a constructor
+
+Abstract class can inherit another abstract or
+non abstract class
+
+An abstract class can implement any
+interfaces
+
+The abstract keywords in an non-access
+modifier, used for classes and methods
+
+Abstract method: can only be used in an abstract class,and it does not have a body
+/definition. The definition / body
+/implementation provided by its child classes.
+
+Abstract class: Ia a restricted class that
+cannot be used to create objects. It must be
+inherited from another class
+
+We cannot create an object of abstract class
+but it can store reference of its child class.
