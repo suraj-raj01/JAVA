@@ -6,7 +6,7 @@ public class MoveXlast{
         int size = s.length();
         char[] str = s.toCharArray();
         int l=0;
-        for(int i=0; i<size; i++)
+        for(int i=1; i<size; i++)
         {
             if(str[i]!='X' && str[i]!='x')
             {
